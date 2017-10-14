@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/static/css/main.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <!--LOAD PRE-REQUISITES FOR GOOGLE SIGN IN -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="744643114009-l172ar4f6ecnefd1m9rgg8vj9rq1nrl1.apps.googleusercontent.com">
+        <!-- END PRE-REQUISITES FOR GOOGLE SIGN IN -->
+
+        <title>The Restaurant App</title>
+    </head>
+
+    <body>
+        <div class="container shadoweffect row">
+
+            <header class="container row header-color">
+                <div class="title-logo">
+                    <a href="/"><img class="logo-image" src="/static/images/logo-100.png"
+                         srcset="/static/images/logo-200.png 200w,
+                                 /static/images/logo-500.png 500w"
+                         sizes="(min-width: 768px) 130px, 82px"
+                         alt="Company Logo">
+                    </a>
+                </div>
+
+                <div class=" title-desc page-title-desc app-name-header">
+                    <div class="header">
+                        <h1> The Restaurant App </h1>
+                    </div>
+                    <nav class="navlinks">
+                        {% if not user: %}
+                            <a class="navitems" href="/login">Login </a>
+                        {% else %}
+                            <p class="hello cat-italic" href="/">Hello {{user.username}}</p>
+                            <a class="navitems" href="/logout">Logout</a><!--conditional signin/signout/username-->
+                        {% endif %}
+                    </nav>
+                </div>
+            </header>
+
+            {% block content %}
+            {% endblock %}
+
+            {% if not user: %}
+            <div class="lg-msg-container postshadoweffect">
+                <div class="lg-msg">Login to add, or update and delete restaurants.</div>
+            </div>
+            {% endif %}
+
+
+            <footer class="row">
+                <h5 class="footeritems">&copy; 2017 The Yellow Company</h5>
+                <nav>
+                    <a class="navitems" href="/">Home</a> |
+                    <a class="navitems" href="/contact">Contact</a>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>

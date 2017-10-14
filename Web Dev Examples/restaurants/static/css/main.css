@@ -1,0 +1,602 @@
+/******************** Media Queries ********************/
+@media screen and (min-width: 550px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .proj {
+        width: 30%;
+    }
+
+    .navlinks {
+        padding-top: 3%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        width: 900px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+}
+
+/******************** page level styling ********************/
+@font-face {
+    /*font-family: 'open_sanscondensed_light';*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /*font-family: 'open_sanscondensed_light', sans-serif;*/
+    /*color: #333333 /*#f6f6f6; /*color: #747704;    */
+    font-size: 16px;
+    background-color: #f6f6f6;
+    transition: font-size .2s ease-in;
+}
+
+header {
+    padding: 1%;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    color: #7f7f7f; /* dark grey 808080*/
+    background-color: #7f7f7f; /* dark grey */
+    margin-bottom: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    padding: 0.8em 0;
+    text-align: center;
+    background-color: #58595B; /*#f44336;*/
+    font-size: 1em;
+    color: #c1c1c1;
+}
+
+h1, h3, h2, h4, h5, p, img, form{
+    margin:0;
+    padding: 0;
+    font-weight: normal;
+}
+
+main {
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border:none;
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: uppercase;
+}
+
+small {
+    display: block;
+    font-size: 0.75em;
+}
+
+/* Copied from and then edited
+http://callmenick.com/post/various-css-input-text-styles
+*/
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+nav a, nav a:visited, nav a:hover, nav a:active {
+    color: #f6f6f6;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+.row {
+    width: 100%;
+}
+
+.header-color {
+    background-color: #58595B; /*#dark grey */
+}
+
+.main-content-color{
+    background-color: #f6f6f6; /*off white*/
+}
+
+.error {
+    color: red;
+    font-size: 1em;
+    padding: 2%;
+
+}
+
+/********************other containers and their styles********************/
+.postshadoweffect {
+    box-shadow: 0px 0px 2px #888888;
+}
+
+.allpagecontent {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.subcontainer {
+    width: 85%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: #FFFFFF; /*white*/
+}
+
+.item-subcontainer {
+    width: 50%;
+    padding: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: #FFFFFF; /*white*/
+
+}
+
+.signupcontainer {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.formcontainer {
+    border: 3px solid #f1f1f1;
+    border-radius: 4px;
+}
+
+.gendisplay {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-container {
+    width: 50%;
+    padding: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: #FFFFFF;
+}
+
+.lg-msg-container {
+    width: 25%;
+    padding: 0.4%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: #FFFFFF; /*white*/
+
+}
+
+/******************** Colors ********************/
+.offwhite {
+    color: #f6f6f6;
+}
+
+.green {
+    color: #3FAD6F;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: #5BA8DA;
+}
+
+.yellow {
+    color:yellow;
+}
+
+/******************** Button/Links/Forms styling ********************/
+.navlinks {
+    padding-top: 2%;
+}
+
+.navitems {
+    font-size: 1em;
+    margin: 0;
+    text-transform: capitalize;
+    color: #f6f6f6;
+}
+
+.items {
+    padding-top: 2%;
+    font-size: 1em;
+    margin: 0;
+    padding-left: 2%;
+    /*color: inherit;*/
+}
+
+.div-item {
+    display:inline-block;
+}
+
+.formelements {
+    padding-bottom: 20px;
+}
+
+.btn-div {
+    text-align: center;
+}
+
+.btn{
+    text-transform: uppercase;
+    color: #333333;
+    min-width: 60px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #3FAD6F;
+    border-radius: 15px;
+    /*text-align: center;*/
+    cursor: pointer;
+    font-size: 0.8em;
+    font-family: inherit;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    background: rgba(63, 173, 111, 0);
+}
+
+.btn-ext {
+    width: 10%;
+    padding: 0.5em;
+}
+
+.btn-ext-sign1 {
+    padding: 6px 15px;
+}
+
+.btn-ext-sign2 {
+    padding: 8px 15px;
+}
+.is-green-btn:hover,
+.is-green-btn:focus{
+  color: #fff;
+  background: rgba(63, 173, 111, 1);
+}
+
+div.is-green-btn:hover button,
+div.is-green-btn:focus button{
+  color: #fff;
+}
+
+.is-heart-btn:hover,
+.is-heart-btn:focus{
+  color: rgb(255, 0, 0);
+  cursor:pointer;
+}
+
+/******************** HR line ********************/
+.hrsize {
+    width: 50%;
+}
+
+.hralign {
+   text-align: center;
+}
+
+.hrsize2 {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/******************** Footer********************/
+.footernavitems {
+    padding-top: 5px;
+    font-size: 0.8em;
+    margin: 0;
+    text-transform: lowercase;
+}
+
+/******************** Header ********************/
+.hello {
+    text-align: right;
+    /*margin-top: 1em;*/
+    text-transform: capitalize;
+}
+
+.title-logo {
+    width: 40%;
+}
+
+.title-desc {
+/*    width: 60%;*/
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #e1e1e1;
+}
+
+.app-name-header {
+    width: 60%;
+}
+
+.page-title {
+    background-color: gray;
+}
+
+.page-title-desc {
+    text-align: right;
+}
+
+.logo-image {
+    width: 70%;
+    max-width: 100px;
+    transition: width .2s ease-in;
+}
+
+.title-name {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.title-role {
+    margin: 0;
+    font-size: 1.12em;
+}
+
+/******************** New Post ********************/
+.newblogposts {
+    margin-top: 30px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.newtitle {
+    padding-bottom: 25px;
+}
+
+.tinycontent {
+    padding-bottom: 15px;
+}
+
+/******************** Signin, signup, signout ********************/
+.signup {
+    font-size: 0.9em;
+}
+.sign-btn {
+    padding: 0.5em 0;
+}
+
+/******************** Post Home Page ********************/
+.pagetitle {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.user-circle {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 1em;
+    background-color: #3FAD6F;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.fa.user-icon {
+    font-size: 0.7em;
+}
+
+.author {
+    width: 50%;
+    text-align: left;
+    /*padding: 0;
+    padding-left: 10px;
+    padding-*/right: 10px;
+    color: #3FAD6F; /*green*/
+    font-size: 1em;
+}
+
+.edit-del {
+    width: 50%;
+    text-align: right;
+}
+
+.edit {
+    margin-right: 0.5em;
+    width: 10%;
+}
+
+.delete {
+    width: 10%;
+}
+
+.blogheader {
+    margin: 0;
+    /*padding: 10px;*/
+    padding-top: 1em;
+    padding-bottom: 0px;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    text-align: left;
+    align-items: flex-end;
+}
+
+.blogtitle {
+    width: 70%;
+}
+
+.blogdate {
+    width: 30%;
+    font-size: .5em;
+    text-align: right;
+}
+.blogcontent {
+    font-size: 1.12em;
+    padding: 0 10px;
+}
+
+.dots {
+    align-items: center;
+    text-align: center;
+}
+
+.noposts {
+    text-align: center;
+    padding: 25px;
+}
+
+/******************** Comments and Likes ********************/
+.share {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.comments {
+    width: 50%;
+    text-align: right;
+    font-weight: bold;
+}
+
+.commentfrmt {
+    text-align: right;
+    color: #5BA8DA;
+}
+.disqus-box {
+    width:100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.disqus-styles {
+    padding: 10px;
+}
+
+.lk-cmnt {
+   padding-top: 1.5em;
+   font-size: 0.8em;
+   width: 100%;
+}
+
+.likes {
+    width: 50%;
+    text-align: left;
+    color: #5BA8DA; /*blue*/
+}
+
+.like-number {
+    font-weight: bold;
+}
+
+/******************** about & contact pages ********************/
+.about {
+    color: #333333;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.aboutSize {
+    height: 150px;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.article-margin {
+    margin-bottom: 40px;
+}
+
+/***********************categories ****************************/
+.cat-width {
+    width: 38%;
+}
+
+.page-border {
+    width: 10%;
+}
+
+.item-width {
+    width: 60%;
+}
+
+.item-details {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+
+
+.temp-padding {
+    padding: 0;
+}
+
+.padd {
+     padding: 5px;
+}
+
+/*
+.cat-font {
+    color: #213556;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+*/
+
+.cat-line {
+    border: none;
+    border-right: 1px solid #58595B;
+/*    padding-right: 5px;*/
+}
+
+.gbutton {
+    padding: 5%;
+
+}
+
+.cat-italic {
+    font-style: italic;
+}
+
+.lg-msg {
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+}
+
