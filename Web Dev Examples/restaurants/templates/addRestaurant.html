@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="main-content-color">
+
+    <div class="item-subcontainer postshadoweffect">
+
+        <div class="row gendisplay page-title padd">
+            <div class="title-desc">Add a new Restaurant</div>
+        </div>
+
+        <form action="/restaurant/add" method='POST'>
+            <br><small>Name</small>
+            <input type="text" name="rname">
+
+            <br><br><small>Location</small>
+            <input type="text" name="rloc">
+
+            <br><br>
+            <button class="btn is-green-btn sign-btn btn-ext" type="submit">Save</button>
+            <a class = "btn is-green-btn btn-ext" href = "/">Discard Changes</a>
+        </form>
+
+    </div>
+{% endblock %}

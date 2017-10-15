@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="main-content-color">
+
+    <div class="subcontainer postshadoweffect">
+
+        <div class="row gendisplay padd">
+            <a class="btn is-green-btn btn-ext addbtn" href="{{url_for('create_restaurant')}}">
+                Add New Restaurant
+            </a>
+        </div>
+
+        <div class="row gendisplay page-title padd">
+            <div class="cat-width title-desc">Restaurants</div>
+            <!-- <div class="item-width title-desc">Location</div> -->
+        </div>
+
+
+        <div class="row gendisplay padd">
+
+            <div class="cat-width gendisplay cat-line">
+                {% for restaurant in restaurants %}
+                    <p class="row items">{{restaurant.name}} [{{restaurant.location}}]</p>
+                {% endfor %}
+            </div>
+        </div>
+</main>
+{% endblock %}
